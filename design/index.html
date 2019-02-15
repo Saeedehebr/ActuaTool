@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Flexible Actuator Parameters</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/css/dataTables.bootstrap4.min.css" rel="stylesheet"/> -->
+	<link rel="Stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css"
+	<!-- <link href="css/bootstrap-toggle.min.css" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/styles.css"/>
+</head>
+
+<!-- //cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css -->
+
+<body>
+<h2>ActuaTool</h2>
+<p>A Design and Study Tool for Trilayer Conducting Polymer Actuator Beams</p>
+<h4>"Design Mode"</h4>
+
+
+		<div class="PEDOTcolumn col-xs-4">
+
+			<div class="param-header">Conducting Polymer Parameters</div>
+			<div class="row paramrow">
+				
+			</div>
+			<div class="row paramrow">
+				<label class = "col-xs-5" for="sigp">Ionic conductivity   </label>
+				<input type="text" class="param col-xs-3 v" id="PEDOT-ioniconductivity" placeholder="e.g., 0.005"/>
+				<label class = "col-xs-2 for="unit">S/m</label>
+		  	
+			</div>
+
+						<div class="row paramrow">
+				<label class = "col-xs-5" for="sige">Electronic conductivity</label>
+				<input type="text" class="param col-xs-3 v" id="PEDOT-eleconductivity" placeholder=""/>
+				<label class = "col-xs-2 for="unit">S/m</label>
+			
+			</div>
+
+			<div class="row paramrow">			
+				<label class = "col-xs-5" for="Ep">Young's Modulus</label>
+			    <input type="text" class="param col-xs-3 v" id="PEDOT-youngs" placeholder=" "/>
+			    <label class = "col-xs-2 for="unit">MPa</label>
+			    						
+			</div>
+
+
+			<div class="row paramrow">
+				<label class = "col-xs-5" for="Cv">Volumetric capacitance</label>
+				<input type="text" class="param col-xs-3 v" id="PEDOT-volumetric-Capacitance" placeholder=""/>
+				<label class = "col-xs-2 for="unit">F/cm<sup>3</sup></label>
+			
+			</div>
+
+			<div class="row paramrow">
+				<label class = "col-xs-5" for="Alpha">Strain to charge ratio</label>
+				<input type="text" class="param col-xs-3 v" id="Alpha" placeholder=""/>
+				<label class = "col-xs-2 for="unit">mm<sup>3</sup>/C</label>
+			
+			</div>
+
+						<div class="param-header">Separator Parameters</div>
+			<div class="row paramrow">
+				
+			</div>
+			<div class="row paramrow">
+				<label class = "col-xs-5" for="sigs">Ionic conductivity   </label>
+				<input type="text" class="param col-xs-3 v" id="spe-ioniconductivity" placeholder="e.g., 0.1"/>
+				<label class = "col-xs-2 for="unit">S/m</label>
+
+
+			  	
+			</div>
+			<div class="row paramrow">			
+				<label class = "col-xs-5" for="Es">Young's Modulus</label>
+			    <input type="text" class="param col-xs-3 v" id="spe-youngs" placeholder=""/>
+			    <label class = "col-xs-2 for="unit">MPa</label>
+			    						
+			</div>
+
+		</div>
+
+		<div class="PEDOTcolumn col-xs-4">
+
+
+
+			<div class="param-header">Device Parameters</div>
+			<div class="row paramrow">
+				
+			</div>
+
+			<div class="row paramrow">
+				<label class = "col-xs-5" for="ar">Width (mm)   </label>
+				<input type="text" class="param col-xs-3 v" id="aspectratio" placeholder="e.g., 0.5"/>
+				<label class = "col-xs-2 for="unit"></label>
+		    </div>
+
+		     <div class="row paramrow">
+				<label class = "col-xs-5" for="contactres">Specific contact resistance</label>
+				<input type="text" class="param col-xs-3 v" id="contactres" placeholder=""/>
+				<label class = "col-xs-2 for="unit">&#8486;mm<sup>2</label>
+		    </div>
+
+		    <div class="row paramrow">
+				<label class = "col-xs-5" for="contactarea">Contact area</label>
+				<input type="text" class="param col-xs-3 v" id="contactarea" placeholder=""/>
+				<label class = "col-xs-2 for="unit">mm<sup>2</label>
+		    </div>
+
+
+		    <div class="row paramrow">
+				<label class = "col-xs-5" for="pm">Average mass density</label>
+				<input type="text" class="param col-xs-3 v" id="density" placeholder=""/>
+				<label class = "col-xs-2 for="unit">g/cm<sup>3</label>
+		    </div>
+
+		    <div class="row paramrow">
+				<label class = "col-xs-5" for="dr">Damping ratio   </label>
+				<input type="text" class="param col-xs-3 v" id="Damping" placeholder=""/>
+				<label class = "col-xs-2 for="unit"></label>
+		    </div>
+
+
+		    <div class="row paramrow">
+				<label class = "col-xs-5" for="V">Operation voltage    </label>
+				<input type="text" class="param col-xs-3 v" id="Voltage" placeholder=""/>
+				<label class = "col-xs-2 for="unit">V</label>
+		    </div>
+
+		    <div class="row paramrow">
+				<label class = " fre col-xs-5" for="op_frequency">Operation frequnecy   </label>
+				<input type="text" class=" fre param col-xs-3 v" id="op_frequency" placeholder=""/>
+				<label class = " fre col-xs-2 for="unit">Hz</label>
+		    </div>
+		    
+		    <div class="row paramrow">
+		         <label ></label>
+
+		    </div>
+
+
+		
+	
+    	
+    			<div class="param-header">Encapsulation parameters
+    				</div>
+
+    						<div class= "row ">
+
+
+    			<button type="button" class="check btn_success  col-xs-6" id="enc-btn">ON</button>
+    			<button type="button" class="check btn_success  col-xs-6" id="enc-btn-off" disabled>OFF</button>
+
+    			</div>
+
+
+    		    <div class="row paramrow">
+				<label class = "enc2 col-xs-5" for="Enc_YM">Young's Modulus   </label>
+				<input type="text" class="enc1 param col-xs-3 v" id="enc_young" placeholder="e.g., 10"/disabled>
+				<label class = "enc2 col-xs-2 for="unit">MPa</label>
+		    </div>
+
+			<div class="row paramrow">
+				<label class = "enc2 col-xs-5" for="Enc_h">Thickness   </label>
+				<input type="text" class="enc1 param col-xs-3 v" id="enc_thickness" placeholder=""/disabled>
+				<label class = "enc2 col-xs-2 for="unit">&micro;m</label>
+		    </div>
+
+		    <div class="row paramrow">
+				<label class = "enc2 col-xs-5" for="Enc_p">Mass density   </label>
+				<input type="text" class="enc1 param col-xs-3 v" id="enc_density" placeholder=""/disabled>
+				<label class = "enc2 col-xs-2 for="unit">g/cm<sup>3</label>
+		    </div>
+
+
+				
+		    	
+		    	</div> 
+
+
+		<div class="PEDOTcolumn col-xs-4 ">
+
+		<div class="param-header ">Desired Output</div>
+
+		
+
+			<div class="row paramrow">
+
+
+				<!--<input type="text" class="priority col-xs-1 p container" id="Cut-off-p" placeholder="1"/>-->
+				<label class = "col-xs-4  " for="Cut-off">Cut-off frequency</label>
+				<input type="text" class="param col-xs-2 min" id="Cut-off-min" placeholder="Min"/>
+			    <button type="button" class="rangebtn" id="Cut-off-range-btn">>>Range Values>></button>
+		      	<input type="text" class="param col-xs-2  max" id="Cut-off-max" placeholder="Max"/>
+		      	<label class = "col-xs-2 max" id= "Cut-off-unit" for="unit">Hz</label>	
+
+			</div>
+			
+		
+			<div class="row paramrow">
+
+
+
+			  <!--  <input type="text" class="priority col-xs-1 p container" id="force-p" placeholder="2"/>-->
+				<label class = "col-xs-4 " for="Force">Blocking force</label>
+				<input type="text" class="param col-xs-2 min" id="force-min" placeholder="Min"/>
+			    <button type="button" class="rangebtn" id="force-range-btn">>>Range Values>></button>
+		      	<input type="text" class="param col-xs-2 max" id="force-max" placeholder="Max"/>
+		      	<label class = "col-xs-2 max" id= "force-unit" for="unit">mN</label>	
+
+			</div>
+			
+
+			<div class="row paramrow">
+
+
+				<!--<input type="text" class="priority col-xs-1 p container" id="Deflection-p" placeholder="3"/>-->
+				<label class = "col-xs-4  " for="Deflection">Vertical tip displacement</label>
+				<input type="text" class="param col-xs-2 min" id="Deflection-min" placeholder="Min"/>
+			    <button type="button" class="rangebtn" id="Deflection-range-btn">>>Range Values>></button>
+		      	<input type="text" class="param col-xs-2 max" id="Deflection-max" placeholder="Max"/>
+		      	<label class = "col-xs-2 max" id= "Deflection-unit" for="unit">mm</label>	
+
+			</div>
+
+			<div class="row paramrow">
+
+			
+				<!--<input type="text" class="priority col-xs-1 p container" id="Power-p" placeholder="3"/>-->
+				<label class = "col-xs-4  " for="Power">Average power consumption</label>
+				<input type="text" class="param col-xs-2 min" id="Power-min" placeholder="Min"/>
+			    <button type="button" class="rangebtn" id="Power-range-btn">>>Range Values>></button>
+		      	<input type="text" class="param col-xs-2 max" id="Power-max" placeholder="Max"/>
+		      	<label class = "col-xs-2 max" id= "Power-unit" for="unit">mW</label>	
+
+			</div>
+
+			<div class="row paramrow">
+
+			
+				<!--<input type="text" class="priority col-xs-1 p container" id="Stiffness-p" placeholder="3"/>-->
+				<label class = "col-xs-4  " for="Stiffness">Stiffness</label>
+				<input type="text" class="param col-xs-2 min" id="Stiffness-min" placeholder="Min"/>
+			    <button type="button" class="rangebtn" id="Stiffness-range-btn">>>Range Values>></button>
+		      	<input type="text" class="param col-xs-2 max" id="Stiffness-max" placeholder="Max"/>
+		      	<label class = "col-xs-2 max" id= "Stiffness-unit" for="unit">mN/m</label>	
+
+			</div>
+
+
+						<div class="row paramrow">
+
+			
+				<!--<input type="text" class="priority col-xs-1 p container" id="Stiffness-p" placeholder="3"/>-->
+				<label class = "col-xs-4  " for="Resonance">Resonance Frequecny</label>
+				<input type="text" class="param col-xs-2 min" id="Resonance-min" placeholder="Min"/>
+			    <button type="button" class="rangebtn" id="Resonance-range-btn">>>Range Values>></button>
+		      	<input type="text" class="param col-xs-2 max" id="Resonance-max" placeholder="Max"/>
+		      	<label class = "col-xs-2 max" id= "Resonance-unit" for="unit">Hz</label>	
+
+			</div>
+
+			<div class="param-header ">Ranges of Dimensions</div>
+
+		
+
+			<div class="row paramrow">
+
+				
+				<label class = "col-xs-4 " for="CP-thickness">Conducting polymer thickness</label>
+				<input type="text" class="param col-xs-2 v" id="CP-thickness-min" placeholder="Min"/>
+		      	<input type="text" class="param col-xs-2 v" id="CP-thickness-max" placeholder="Max"/>
+		        <input type="text" class="param col-xs-2 v" id="CP-thickness-step"placeholder="Res."/>
+		      	<label class = "col-xs-2" for="unit">&micro;m</label>	
+
+			</div>
+			
+		
+			<div class="row paramrow">
+			   
+				<label class = "col-xs-4 " for="spe-thickness">Separator thickness</label>
+				<input type="text" class="param col-xs-2 v" id="spe-thickness-min" placeholder="Min"/>
+		      	<input type="text" class="param col-xs-2 v" id="spe-thickness-max" placeholder="Max"/>
+		      	<input type="text" class="param col-xs-2 v" id="spe-thickness-step"placeholder="Res."/>
+		      	<label class = "col-xs-2" for="unit">&micro;m</label>	
+
+			</div>
+			
+
+			<div class="row paramrow">
+
+
+				<label class = "col-xs-4  " for="Length">Device length</label>
+				<input type="text" class="param col-xs-2 v" id="Length-min" placeholder="Min"/>
+		      	<input type="text" class="param col-xs-2 v" id="Length-max" placeholder="Max"/>
+		      	<input type="text" class="param col-xs-2 v" id="Length-step"placeholder="Res."/>
+		      	<label class = "col-xs-2" for="unit">mm</label>	
+
+			</div>
+
+			
+		</div>	
+	</div>
+	<div class="row">
+	<div class="col-xs-6">
+	<button type="button" class="dflt btn btn-success btn-lg" id="dflt-btn">Set Default Values</button>
+	<button type="button" class="drawbtn btn btn-success btn-lg" id="draw-btn">Find Dimensions</button>
+		
+		
+
+	</div>
+
+	
+		
+	</div>
+	</form>
+</div>
+
+
+<!--<div class="plots-area container-fluid">-->
+		<div class= "row">
+			<!--<h1 class="col-xs-2">Plots</h1>-->
+			<h3 id="progresstext" class = "status col-xs-4 "></h3>
+		</div>
+
+
+<table id="Results" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Cut-Off frequency (Hz)</th>
+                <th>Blocking force (mN)</th>
+                <th>Vertical tip displacement (mm)</th>
+                <th>Lateral tip displacement (mm)</th>
+                <th>Average power consumption (mW)</th>
+                <th>Stiffness (mN/m)</th>
+                <th>Resonance frequnecy (Hz)</th>
+                <th>CP thickness (µm)</th>
+                <th>Separator thickness (µm)</th>
+                <th>Device length (mm)</th>
+            </tr>
+        </thead>
+</table>
+
+</table>
+	
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/d3.min.js"></script>
+	<script type="text/javascript" src="js/math.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.13/js/dataTables.bootstrap4.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://cdn.datatables.net/buttons/1.5.2/js/dataTables.buttons.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+	<script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.html5.min.js"></script>
+
+</body>
+</html>

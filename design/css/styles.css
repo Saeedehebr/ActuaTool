@@ -1,0 +1,322 @@
+body{
+	font-family: "Segoe UI Light", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+input{
+	margin-right: 0px;
+}
+.container {
+     padding-left: 10px;  /*idem*/
+     margin-right: auto;
+     margin-left: auto;
+}
+
+.row {
+	margin-bottom: 0px;
+}
+
+.row2 {
+	margin-bottom: 10px;
+}
+
+.paramtitle{
+	font-size:400%;
+	font-weight: bold;
+	margin-bottom: 0px;
+	margin-top: 15px;
+	margin-left: 80px;
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic;
+}
+.tabledata {
+	font-size:150%;
+	font-weight: bold;
+	margin-bottom: 0px;
+	margin-top: 15px;
+	
+	
+}
+
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+
+}
+
+th {
+    text-align: center;
+    width: 10%;
+    font-size:120%;
+    border: 1px solid #ddd;
+    padding: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: black;
+
+
+}
+td {
+	width: 10%;
+	text-align: center;
+	border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.tablehd{
+	text-align: center;
+    font-size:120%;
+    display: none;
+}
+
+.paramtitle2{
+	font-size:120%;
+	font-weight: bold;
+	margin-bottom: 0px;
+	margin-top: -10px;
+	margin-left: 80px;
+	font-style: italic;
+
+}
+/*.row > div {;
+	border:2px solid black;
+}*/
+
+/*.device, .parameters {
+	height:250px; 
+}
+*/
+
+.paramrow{
+	margin-top: 30px
+	margin-bottom:6px;
+
+}
+.devicecolumn {
+	margin-top: 45px
+
+}
+.PEDOTcolumn{
+	margin-top: 30px;
+	margin-bottom: 10px;
+	
+}
+.specolumn{
+	margin-top: 30px;
+	margin-bottom: 10px;
+	
+}
+.resultscolumn{
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	
+}
+
+.param-header{
+	/*font-family: "Segoe UI Light", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;*/
+	font-size:200%;
+	font-weight: bold;
+	margin-bottom: 0px;
+	margin-top: 15px;
+	
+}
+
+.priority-text{
+	/*font-family: "Segoe UI Light", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;*/
+	font-size:100%;
+	font-weight: bold;
+	margin-bottom: 0px;
+	margin-top: 15px;
+	
+}
+.plots-area{
+	border:2px solid black;
+	height:500px; 
+
+}
+
+.img-PEDOT {
+	border:2px solid black;
+	background-color:lightgray;
+	height:30px;
+	border-radius: 0px;
+	text-align: center;
+	vertical-align: middle;
+	/*line-height: 27px; */
+	font-weight: bold; 
+	margin: 0px 0px 0px 10px;
+	border-collapse: collapse;
+	font-size: 120%;
+	line-height: 25px;
+}
+
+.img-SPE {
+	border:1px solid black;
+	border-radius: 0px;
+	height:80px;
+	border-radius: 0px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 80px;  
+	font-weight: bold;
+	margin: 0px 0px 0px 10px;
+	border-collapse: collapse;
+	font-size: 150%;
+
+}
+
+.drawbtn, .dflt{
+	width: 200px;
+	text-align: center
+
+}
+
+#graph1, #graph2,#graph3{
+	height:300px;
+	/*margin-right: 5px;
+	margin-left: 5px;*/
+}
+
+.graphinfo{
+	font-size: 150%;
+}
+
+#draw-btn, #dflt-btn{
+	margin-top: 25px;
+	margin-bottom: 10px;
+	text-align: center;
+	background-color:#47b247;
+
+
+}
+
+.btn-lg{
+	margin-top: 2px;
+	margin-bottom: 2px;
+    text-align: center;
+    	font-size: 100%;
+
+
+}
+
+.check {
+		text-align: center;
+		color: #FFFFFF;
+		background-color:#B0B0B0;
+	margin-top: 10px;
+    margin-left: 20px;
+     	font-size: 100%;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	width: 60px;
+	/*padding-right: 4px*/
+}
+
+#enc-btn{
+background-color:#BEBEBE;
+}
+
+#enc-btn:hover{
+   background-color:#9fdf9f;
+}
+#enc-btn-off{
+background-color:#006622;
+}
+
+button{
+	background-color: white;
+	border:0;
+	font-weight: bold;
+
+}
+
+.max, .step, .min{
+	display: none;
+	color: black;
+	font-weight: bold;
+}
+
+.enc1, .enc2{
+	/*color: black;*/
+	font-weight: normal;
+}
+.v, .p{
+		color: black;
+	font-weight: bold;
+
+}
+
+
+.rangebtn:disabled  {
+    /*background: #dddddd;*/
+    font-weight: normal;
+    color:  black;
+}
+
+.encbtn:  {
+    /*background: #dddddd;*/
+    font-weight: normal;
+    color:  gray;
+}
+
+
+
+.btn-status{
+	margin: 35px 10px 0px 10px;
+}
+.btn-success{
+	font-weight: bold;
+	font-size: 150%;
+	text-align: center
+}
+
+.btn_enc_success{
+    font-weight: bold;
+	font-size: 70%;
+
+}
+#progressbar{
+	background-color: #dddddd;
+	border-radius: 5px;
+	padding: 0px 0px 0px 0px;
+	/*width: 20%;*/
+	/*height: 30px;*/
+}
+
+#progressval{
+	background-color: blue;
+	width:1%;
+	height: 30px;
+	border-radius: 5px;
+	/*margin-top: 20px;*/
+}
+
+#progresstext{
+	font-size: 150%;
+	font-weight: bold;
+	margin-left: 10px;
+}
+.axislabel{
+	font-size: 120%;
+	font-weight: bold;
+}
+h2 {
+    text-align: center;
+    text-transform: normal;
+    color: #4CAF50;
+    font-weight: bold;
+    font-size: 500%;
+}
+p {
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 150%;
+    line-height: 1;
+   
+}
+    h4 {
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 170%;
+    line-height: 2}
+
