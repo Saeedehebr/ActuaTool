@@ -1417,7 +1417,7 @@ fow_arr=[];
 zw_arr=[];
 
 f=ff;
-  
+
 calcMl();
 
 for (l=0; l<=_L; l=l+dl){
@@ -1429,11 +1429,13 @@ Xis_abs=math.add(Xis_abs,xw_abs);
 
 TET=math.add(TET,tet);
 
-// l=l+dl;
+    console.log(f);
 
 }
-          Dis_abs=math.multiply(Dis_abs,1000);
-          Xis_abs=math.multiply(Xis_abs,1000);
+          max_dw=math.multiply(Dis_abs,1000);
+          max_xw=math.multiply(Xis_abs,1000);
+              console.log(Dis_abs);
+
           // Dis_abs=math.abs(Dis_abs);
           // Xis_abs=math.abs(Xis_abs);
 
@@ -1613,7 +1615,6 @@ else{
     _pe=math.multiply(pe,1e3);
 
     f=ff;
-    // console.log(f);
 
          
         for(v1 = hp_min; v1<=hp_max; v1 = v1+dhp){
@@ -1633,15 +1634,14 @@ else{
                         calcCutOff();
                           if (CF_min<=CFF && CFF<=CF_max){
                           calcforcedisp();
-                          // console.log(f);
                           calcdisplacement();
                           calcSTFN();
                           calcRF();
                           calcPower();
                            CFdes_arr.push(expo(CFF, 2));
                            FOdes_arr.push(expo(Fmax, 2));
-                           DFLdes_arr.push(expo(Dis_abs, 2));
-                           DFLXdes_arr.push(expo(Xis_abs, 2));
+                           DFLdes_arr.push(expo(max_dw, 2));
+                           DFLXdes_arr.push(expo(max_xw, 2));
                            PWdes_arr.push(expo(max_P, 2));
                            STFNdes_arr.push(expo(max_STFN, 2));
                            RFdes_arr.push(expo(rf, 2));
@@ -1662,8 +1662,8 @@ else{
                            calcPower() ;          
                            CFdes_arr.push(expo(CFF, 2));
                            FOdes_arr.push(expo(Fmax, 2));
-                           DFLdes_arr.push(expo(Dis_abs, 2));
-                           DFLXdes_arr.push(expo(Xis_abs, 2));
+                           DFLdes_arr.push(expo(max_dw, 2));
+                           DFLXdes_arr.push(expo(max_xw, 2));
                            PWdes_arr.push(expo(max_P, 2));
                            STFNdes_arr.push(expo(max_STFN, 2));
                            RFdes_arr.push(expo(rf, 2));
@@ -1675,7 +1675,7 @@ else{
                  
                         if (param_id=="Deflection"){
                            calcdisplacement();
-                          if (DFL_min<=Dis_abs && Dis_abs<=DFL_max){
+                          if (DFL_min<=max_dw && max_dw<=DFL_max){
                            calcforcedisp();
                            calcCutOff();
                            calcSTFN();
@@ -1683,8 +1683,8 @@ else{
                            calcPower();
                            CFdes_arr.push(expo(CFF, 2));
                            FOdes_arr.push(expo(Fmax, 2));
-                           DFLdes_arr.push(expo(Dis_abs, 2));
-                           DFLXdes_arr.push(expo(Xis_abs, 2));
+                           DFLdes_arr.push(expo(max_dw, 2));
+                           DFLXdes_arr.push(expo(max_xw,2));
                            PWdes_arr.push(expo(max_P, 2));
                            STFNdes_arr.push(expo(max_STFN, 2));
                            RFdes_arr.push(expo(rf, 2));
@@ -1696,6 +1696,8 @@ else{
                         
                         if (param_id=="Power"){
                            calcPower();
+                               console.log(f);
+
                            
                           if (P_min<=max_P && max_P<=P_max){
                            calcforcedisp();
@@ -1705,8 +1707,8 @@ else{
                            calcdisplacement();
                            CFdes_arr.push(expo(CFF, 2));
                            FOdes_arr.push(expo(Fmax, 2));
-                           DFLdes_arr.push(expo(Dis_abs, 2));
-                           DFLXdes_arr.push(expo(Xis_abs, 2));
+                           DFLdes_arr.push(expo(max_dw, 2));
+                           DFLXdes_arr.push(expo(max_xw, 2));
                            PWdes_arr.push(expo(max_P, 2));
                            STFNdes_arr.push(expo(max_STFN, 2));
                            RFdes_arr.push(expo(rf, 2));
@@ -1727,8 +1729,8 @@ else{
                            calcPower();
                            CFdes_arr.push(expo(CFF, 2));
                            FOdes_arr.push(expo(Fmax, 2));
-                           DFLdes_arr.push(expo(Dis_abs, 2));
-                           DFLXdes_arr.push(expo(Xis_abs, 2));
+                           DFLdes_arr.push(expo(max_dw, 2));
+                           DFLXdes_arr.push(expo(max_xw, 2));
                            PWdes_arr.push(expo(max_P, 2));
                            STFNdes_arr.push(expo(max_STFN, 2));
                            RFdes_arr.push(expo(rf, 2));
@@ -1749,8 +1751,8 @@ else{
                            calcPower();
                            CFdes_arr.push(expo(CFF, 2));
                            FOdes_arr.push(expo(Fmax, 2));
-                           DFLdes_arr.push(expo(Dis_abs, 2));
-                           DFLXdes_arr.push(expo(Xis_abs, 2));
+                           DFLdes_arr.push(expo(max_dw, 2));
+                           DFLXdes_arr.push(expo(max_xw, 2));
                            PWdes_arr.push(expo(max_P, 2));
                            STFNdes_arr.push(expo(max_STFN, 2));
                            RFdes_arr.push(expo(rf, 2));
