@@ -1416,7 +1416,8 @@ ffo=0;
 fow_arr=[];
 zw_arr=[];
 
-  f=ff;
+f=ff;
+  
 calcMl();
 
 for (l=0; l<=_L; l=l+dl){
@@ -1674,7 +1675,7 @@ else{
                  
                         if (param_id=="Deflection"){
                            calcdisplacement();
-                          if (DFL_min<=max_dw && max_dw<=DFL_max){
+                          if (DFL_min<=Dis_abs && Dis_abs<=DFL_max){
                            calcforcedisp();
                            calcCutOff();
                            calcSTFN();
