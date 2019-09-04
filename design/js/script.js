@@ -1416,6 +1416,7 @@ ffo=0;
 fow_arr=[];
 zw_arr=[];
 
+  f=ff;
 calcMl();
 
 for (l=0; l<=_L; l=l+dl){
